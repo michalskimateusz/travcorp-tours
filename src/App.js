@@ -26,12 +26,19 @@ function App() {
 
   return (
     <Layout>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {data &&
+        data.map((item) => (
+          <Card
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            price_new={item.price_new}
+            price_old={item.price_old}
+            rating={item.rating}
+            countries={item.countries}
+            duration={item.duration}
+          />
+        ))}
     </Layout>
   );
 }
