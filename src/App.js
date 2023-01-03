@@ -1,10 +1,16 @@
 import "./App.scss";
 import Layout from "./components/ui/Layout";
+import Card from "./components/Card/Card";
 
 function App() {
   return (
     <Layout>
-      <div>Hello</div>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </Layout>
   );
 }

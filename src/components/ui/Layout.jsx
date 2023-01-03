@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
       <Header title="Recently viewed trips" />
-      <div>{children}</div>
+      <div className={styles.container__card}>{children}</div>
     </div>
   );
 };
