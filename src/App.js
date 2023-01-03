@@ -3,26 +3,27 @@ import Layout from "./components/ui/Layout";
 import Card from "./components/Card/Card";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Loader from "./components/ui/Loader";
 
 function App() {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getData().then(() => setIsLoading(false));
+    getData();
   }, []);
 
   const getData = async () => {
     try {
       const response = await axios.get("http://localhost:5000/tours");
       setData(response.data);
-      console.log(response.data);
+      setIsLoading(false);
     } catch (error) {
       console.error(error);
     }
   };
 
-  if (isLoading) return <h1>Loading</h1>;
+  if (isLoading) return <Loader />;
 
   return (
     <Layout>
