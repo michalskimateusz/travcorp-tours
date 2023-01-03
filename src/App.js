@@ -1,10 +1,11 @@
-import './App.scss';
+import "./App.scss";
+import Layout from "./components/ui/Layout";
 
 function App() {
   return (
-    <div>
-      <h1>Travcorp Tours</h1>
-    </div>
+    <Layout>
+      <div>Hello</div>
+    </Layout>
   );
 }
 
