@@ -1,0 +1,34 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "title": "European Quest",
+      "price_new": 2877,
+      "price_old": 3385,
+      "rating": 4.6,
+      "countries": 11,
+      "duration": 25,
+      "image": "https://www.contiki.com/media/1adp4a3q/rome-to-london-quest-summer-trip-2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Simply Italy",
+      "price_new": 1832,
+      "price_old": 2155,
+      "rating": 4.4,
+      "countries": 2,
+      "duration": 15,
+      "image": "https://www.contiki.com/media/2goh2ek3/gondola-ride-venice-italy-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Italian Espresso",
+      "price_new": 1245,
+      "price_old": 1465,
+      "rating": 4.5,
+      "countries": 1,
+      "duration": 10,
+      "image": "https://www.contiki.com/six-two/wp-content/uploads/2017/08/girl-riding-Vespa-in-Florence.jpg"
+    }
+  ]
+}
